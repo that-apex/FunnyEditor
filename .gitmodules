@@ -1,0 +1,3 @@
+[submodule "dist/easyloggingpp"]
+	path = dist/easyloggingpp
+	url = git@github.com:amrayn/easyloggingpp.git

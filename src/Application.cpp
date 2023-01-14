@@ -13,6 +13,7 @@
 #include "SDL/Window.hpp"
 #include "Video/Renderer.hpp"
 
+INITIALIZE_EASYLOGGINGPP
 
 namespace FE {
 
@@ -21,9 +22,11 @@ namespace FE {
 
     int Application::Run() {
         using namespace std::string_literals;
+        LOG(INFO) << "App is starting";
 
         if (m_argc < 2) {
-            throw Exception("Usage: "s + m_argv[0] + " <file path>");
+            LOG(ERROR) << "Usage: "s << m_argv[0] << " <file path>";
+            return 1;
         }
 
         std::string filePath = m_argv[1];

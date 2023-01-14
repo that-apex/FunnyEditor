@@ -28,6 +28,7 @@ target_link_libraries(FunnyEditor_Lib
             FFmpeg::swscale
             ZLIB::ZLIB
             SDL2::SDL2
+            easyloggingpp
 )
 
 target_compile_definitions(FunnyEditor_Lib

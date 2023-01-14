@@ -8,6 +8,8 @@
 #include <string>
 #include <utility>
 
+#include <easylogging++.h>
+
 namespace FE {
 
     class Exception : public std::exception {

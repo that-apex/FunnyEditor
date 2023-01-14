@@ -40,6 +40,8 @@ namespace FE::Video {
         if (req_pause > 0) {
             SDL_Delay(req_pause);
         }
+
+        return true;
     }
 
     SDL::Texture &Renderer::GetTexture() {

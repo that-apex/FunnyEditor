@@ -7,7 +7,7 @@ int main(int argc, char **argv) {
     try {
         return app.Run();
     } catch (const FE::Exception &ex) {
-        std::cerr << "Unexpected error has occurred: " << ex.what() << std::endl;
+        LOG(ERROR) << "Unexpected error has occurred: " << ex.what();
         return 1;
     }
 }
