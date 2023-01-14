@@ -8,6 +8,9 @@ namespace FE::FFmpeg {
 
     class Packet : NoCopy {
     public:
+        ~Packet();
+
+    public:
         AVPacket& GetPacket() noexcept;
 
         void Unref();

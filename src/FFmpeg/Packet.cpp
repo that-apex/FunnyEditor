@@ -2,7 +2,11 @@
 
 namespace FE::FFmpeg {
 
-    AVPacket &Packet::GetPacket()  noexcept {
+    Packet::~Packet() {
+        Unref();
+    }
+
+    AVPacket &Packet::GetPacket() noexcept {
         return m_packet;
     }
 
